@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Apply for a Juggling Licence
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This service allows you to apply for a licence to be able to juggle in public. 
+      </p>
+
+      <h2 class="govuk-heading-m">About this service</h2>
+
+      <p>We recommend you use this service even if you are not planning on juggling in the immediate future. </p>
+
+      <p>You can change your answers to the questions at any time and there is no limit to the number of applications you can make.</p>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          You can be fined up to £5,000 if you do not register.
+        </strong>
+      </div>
+          <a href="start.html">
+            Click here to proceed to service
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}
